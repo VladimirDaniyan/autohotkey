@@ -28,9 +28,12 @@ LWin::LAlt
 #IfWinActive, ahk_class Chrome_WidgetWin_1
 
 ; Tab operations
-!w::Send ^{w}
-!t::Send ^{t}
-!+t::Send ^+{t}
+!w::Send ^{w} ; close
+!t::Send ^{t} ; open new
+!+t::Send ^+{t} ; re-open last closed
+!+]::Send ^{Tab} ; switch tab forward
+!+[::Send ^+{Tab} ; switch tab back
+!r::Send ^{r} ; reload tab
 
 ; Find jump back and forth
 !g::Send ^{g}
@@ -41,9 +44,5 @@ LWin::LAlt
 
 ; Show source code with cmd + alt + u
 #!u::Send ^{u}
-
-; switch tabs
-!+]::Send ^{Tab}
-!+[::Send ^+{Tab}
 
 #IfWinActive
