@@ -18,7 +18,6 @@ LWin::LAlt
 !f::Send ^{f}
 !x::Send ^{x}
 !n::Send ^{n}
-;!w::Send ^{w}
 !p::Send ^{p}
 
 ; Cmd + Q -> quit the active application
