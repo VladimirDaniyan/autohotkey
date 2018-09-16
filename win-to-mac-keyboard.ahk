@@ -44,4 +44,7 @@ LWin::LAlt
 ; Show source code with cmd + alt + u
 #!u::Send ^{u}
 
+; cmd + click for new Tab
+!LButton::Send ^{LButton}
+
 #IfWinActive
